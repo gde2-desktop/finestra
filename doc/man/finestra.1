@@ -1,0 +1,68 @@
+.\" Man page for Finestra.
+.TH FINESTRA 1 "7 February 2014" "GDE2 Desktop Environment"
+.\" Please adjust this date when revising the manpage.
+.\"
+.SH "NAME"
+Finestra \- The GDE2 Window Manager
+.SH "SYNOPSIS"
+.B finestra [OPTIONS]
+.SH "DESCRIPTION"
+Finestra is a minimal X window manager that uses GTK+ for drawing window frames. It is aimed at non-technical users and is designed to integrate well with the GDE2 desktop. Finestra is a plain window manager for the adult in you; Many window managers are like Marshmallow Froot Loops, Finestra is like Cheerios. It lacks some features that may be expected by traditional UNIX or other technical users; these users may want to investigate other available window managers for use with GDE2 or as a standalone window manager.
+.PP
+Finestra supports several somewhat advanced but common features such as Window Shading/Roll-Up, Window/Edge Snapping, Vertical and Horizontal Maximize, Always-On-Top, Sloppy/Mouse Focus and Raising, and many more... Well, not a lot, but some more.
+.PP
+This manual page documents the \fBfinestra\fR command.
+
+.SH "OPTIONS"
+.TP
+\fB\-d, \-\-display=DISPLAY\fR
+X display to use.
+.TP
+\fB\-\-sync\fR
+.br
+Make X calls synchronous.
+.TP
+\fB\-\-replace\fR
+Replace the currently running window manager with Finestra.
+.TP
+\fB\-\-sm\-disable\fR
+Disable the connection to the session manager.
+.TP
+\fB\-\-sm\-client\-id=ID\fR
+Specify a session management ID.
+.TP
+\fB\-\-sm\-save\-file=FILENAME\fR
+Restore from a session management savefile. 
+.br
+If no path is specified \fBfinestra\fR will look in ~/.config/gde2-session/saved-session/
+.TP
+\fB\-c, \-\-composite\fR
+Turn compositing ON. You may also use this option to start \fBfinestra\fR with composite "true transparency" effects. 
+.TP
+\fB\-\-no\-composite\fR
+Turn compositing OFF. You may also use this option to start \fBfinestra\fR without compositing effects. 
+.TP
+\fB\-\-no\-force\-fullscreen\fR
+Do not create fullscreen windows without decorations.
+.TP
+\fB\-\-version\fR
+Print current version information and exit.
+.TP
+\fB\-?, \-h, \-\-help\fR
+Print standard command line options.
+.SH "CONFIGURATION"
+Finestra configuration can be found via the main GDE2 menus, under "\fISystem\fP->\fIPreferences\fP->\fIWindows\fP" and "\fISystem\fP->\fIPreferences\fP->\fIKeyboard Shortcuts\fP" or by running the commands \fBgde2-window-properties\fR and \fBgde2-keybinding-properties\fR respectively. Advanced configuration can also be achieved directly, via \fBdconf-editor\fR under "/\fIorg\fP/\fIgde2\fP/\fIfinestra\fP/".
+.SH "BUGS"
+.SS Should you encounter any bugs, they may be reported at: 
+http://github.com/gde2-desktop/finestra/issues
+.SH "AUTHORS"
+.SS This Man Page has been updated/re-written for the GDE2 Desktop Environment by:
+Adam Erdman <hekel@archlinux.info> (2014)
+.SH "HISTORY"
+.SS Portions of this manual page were originally written by Luke Morton and Philip O'Brien (2006) for Metacity, but do not bear resemblance to preceding documentation.
+.SH "SEE ALSO"
+.SS Further information may also be available at: http://wiki.gde2-desktop.org/docs
+.P
+.BR finestra-message (1),
+.BR finestra-theme-viewer (1),
+.BR finestra-window-demo (1)

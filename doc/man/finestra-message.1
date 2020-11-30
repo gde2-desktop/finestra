@@ -1,0 +1,43 @@
+.\" Man page for finestra-message.
+.TH FINESTRA-MESSAGE 1 "8 February 2014" "GDE2 Desktop Environment"
+.\" Please adjust this date whenever revising the manpage.
+.\"
+.SH "NAME"
+finestra\-message \- A command to send messages to Finestra.
+.SH "SYNOPSIS"
+.B finestra\-message [OPTIONS]
+.SH "DESCRIPTION"
+The \fBfinestra\-message\fP command is used to perform some simple window manager tasks while Finestra is running.
+
+.SH "OPTIONS"
+.TP
+\fBrestart\fR
+Restart a currently running instance of \fBfinestra\fP.
+.TP
+\fBreload\-theme\fR
+Reload the current window border theme specified in the dconf database. (/org/gde2/finestra/general/theme)
+.TP
+\fBenable\-keybindings\fR
+Enable all keybindings specified in the dconf database. (/org/gde2/finestra/)
+.TP
+\fBdisable\-keybindings\fR
+Disable all keybindings specified in the dconf database. (/org/gde2/finestra/)
+.TP
+\fBtoggle\-verbose\fR
+Enable or Disable debugging messages for \fBfinestra\fR.
+
+.SH "BUGS"
+.SS Should you encounter any bugs, they may be reported at: 
+http://github.com/gde2-desktop/finestra/issues
+.SH "AUTHORS"
+.SS This Man Page has been updated/re-written for the GDE2 Desktop Environment by:
+Adam Erdman <hekel@archlinux.info> (2014)
+.SH "HISTORY"
+.SS Portions of this manpage were originally written for the Debian GNU/Linux system by:
+Akira TAGOH <tagoh@debian.org> (2002)
+.SH "SEE ALSO"
+.SS Further information may also be available at: http://wiki.gde2-desktop.org/docs
+.P
+.BR finestra (1),
+.BR finestra-theme-viewer (1),
+.BR finestra-window-demo (1)

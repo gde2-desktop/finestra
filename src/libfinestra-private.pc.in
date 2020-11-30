@@ -1,0 +1,12 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+libgde2_serverdir=@libexecdir@
+
+Name: libfinestra-private
+Description: Finestra internals shared 
+Requires: gtk+-@GTK_API_VERSION@
+Version: @VERSION@
+Libs: -L${libdir} -lfinestra-private
+Cflags: -I${includedir}/finestra-1

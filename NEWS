@@ -1,0 +1,69 @@
+1.16.1
+
+    * fix strange window switching foreground/background behavior
+
+1.16.0
+
+    * Translations update
+    * Make distcheck use currently selected GTK+ version
+
+1.14.2
+    * Translations update
+    * GTK+3: fix a typo with deprecated GtkMisc
+    * GTK+3 fixedtip: add style class tooltip
+
+1.14.1
+    * Fix crash on showing alt-tab thumbnails with compositor on
+    * Translations update
+
+1.14.0
+    * Drop Gde2Conf migration script
+    * Fix visual glitches appearing after unmaximizing Chromium window
+    * Correct description of compositing-fast-alt-tab GSettings key
+      (mention that it disables thumbnails)
+    * Bump libfinestra-private's sover for GTK+3 build
+    * GTK+3: re-add ability to show alt-tab thumbnails when compositor
+      is on
+    * GTK+3: fix several deprecations
+    * Translations update
+    * Add Changelog generation
+
+1.12.1
+    * Fix animation issues that led to crashes and visual glitches
+    * GTK+3 fixes
+    * Translations update
+
+1.12.0
+    * Add manual and by-pointer window placement
+    * Use Alt-` for switching between windows of the same application
+    * GTK+3 fixes
+    * Some more fixes and cleanups
+
+1.10.3
+    * Fix crash with minimize animation
+    * Fix crash with moving a window in some distros
+
+1.10.2
+    * Remove outdated assertion.
+    * Make minimize item insensitive when window should not be minimized.
+    * Fix crash when struts change during grab operation.
+    * Fix switching of fullscreen Direct3D applications running in Wine.
+    * Update translations.
+
+1.10.1
+    * Assorted bugfixes
+
+1.10.0
+    * Use zenity instead of gde2-dialogs
+    * Bugfixes
+
+1.8.0
+    * Implement side-by-side tiling
+    * Use yelp-tools instead of gde2-doc-utils
+    * Cut with fading the bar title when it's longer than the decoration
+      bar
+
+1.6.0
+    * Migration to GSettings and dropped Gde2Conf
+    * Fix key handling while drag and drop is active
+    * Add option to open new windows on the center of the screen
